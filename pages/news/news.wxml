@@ -1,0 +1,17 @@
+<!--pages/news/news.wxml-->
+
+<!-- 引入新闻模板 -->
+<import src='/template/newsTemplate/newsTemplate' />
+<view>
+  <swiper catchtap='carouselToDetail' autoplay='true' indicator-dots='true' circular='true'>
+  <swiper-item wx:for="{{[1,2,3,4]}}" wx:key="{{index}}">
+    <image data-detailId='{{index}}' src="/images/detail/carousel/0{{item}}.jpg"></image>
+  </swiper-item>
+  </swiper>
+</view>
+<view wx:for="{{newsData}}" wx:key="{{index}}">
+  <view catchtap='toDetail' data-id='{{index}}'>
+    <!-- 使用新闻模板 -->
+    <template is='news' data='{{...item}}' /> 
+  </view>
+</view>

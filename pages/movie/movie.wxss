@@ -1,0 +1,4 @@
+/* pages/movie/movie.wxss */
+
+/* 引入电影模板样式文件 */
+@import '/template/movieTemplate/movieTemplate.wxss';

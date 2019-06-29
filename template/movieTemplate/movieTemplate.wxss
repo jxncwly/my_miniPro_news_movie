@@ -1,0 +1,38 @@
+/* template/movieTemplate/movieTemplate.wxss */
+
+.movieContainer {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.movieImg {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+.movieContent {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: space-between;
+}
+.movieName {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 32rpx;
+  color: #000;
+}
+.movieDate {
+  font-size: 24rpx;
+  color: #666;
+}
+.movieDirector {
+  font-size: 24rpx;
+  color: #333;
+}
+.movieRating {
+  color: red;
+  font-weight: 700;
+}

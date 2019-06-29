@@ -1,0 +1,10 @@
+<!--pages/movie/movie.wxml-->
+
+<!-- 引入电影模板 -->
+<import src='/template/movieTemplate/movieTemplate' />
+
+<view wx:for='{{movies_data}}' wx:key='{{index}}'>
+  <view catchtap='toDetail' data-id='{{index}}'>
+    <template is='movie' data='{{...item}}' />
+  </view>
+</view>
